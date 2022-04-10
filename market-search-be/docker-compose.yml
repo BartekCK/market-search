@@ -29,6 +29,6 @@ services:
     environment:
       DB_HOST: "database_postgres"
 
-    command: sh -c "npm run migration:run && npm run start:debug"
+    command: sh -c "/bin/wait-for-it.sh database_postgres:5432 --timeout=60 -- npm run migration:run && npm run start:debug"
     depends_on:
       - database

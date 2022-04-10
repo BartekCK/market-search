@@ -15,7 +15,8 @@ you have to install postgres database on your machine.
 5. Start watch dev mode `npm run start:dev`.
 
 ### Docker-compose local development
-1. Run command `docker-compose up`
+1. Copy `.env.template` content, create new file `.env` and paste all data inside new file.
+2. Run command `docker-compose up`
 
 ## Migrations
 
