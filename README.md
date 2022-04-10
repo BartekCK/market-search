@@ -8,13 +8,13 @@
 
 ### Local development
 1.Copy `.env.template` content, create new file `.env` and paste all data inside new file.
-2. Install deps `npm i`
-3. Run all migrations `npm run migration:run`
-4. Start watch dev mode `npm run start:dev`
+2. Install deps `npm i`.
+3. If ou have docker-compose run `docker-compose up database` if not, 
+you have to install postgres database on your machine.
+4. Run all migrations `npm run migration:run`.
+5. Start watch dev mode `npm run start:dev`.
 
-### Docker-compose development
-_Remember to ser appropriate `DB_HOST` inside `.env` file(container name is `database_postgres`)_
-
+### Docker-compose local development
 1. Run command `docker-compose up`
 
 ## Migrations
