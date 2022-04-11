@@ -1,4 +1,10 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity({ name: 'market' })
 export class Market {
@@ -19,4 +25,10 @@ export class Market {
 
   @Column({ type: 'varchar', length: 100 })
   zipCode: string;
+
+  @CreateDateColumn({ name: 'created_at' })
+  public createdAt: Date;
+
+  @UpdateDateColumn({ name: 'updated_at' })
+  public updatedAt: Date;
 }
