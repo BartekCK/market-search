@@ -1,0 +1,4 @@
+id,name,line_one,line_two,city,zipCode,created_at,updated_at
+54c159da-3242-442e-a21e-6f892af1786f,First company,ul. Mała 12,,Warszawa,25-112,2022-04-11 20:13:06.646678,2022-04-11 20:16:44.879450
+4d1e3212-e652-4cac-8b05-e93af589acc2,Third company,ul. Kopalniana 4,,Radom,55-522,2022-04-11 20:13:06.646678,2022-04-11 20:16:44.879450
+6066a35a-fd57-496d-8d1c-9567e4174d66,Second company,ul. Duża 11,,Kielce,11-166,2022-04-11 20:13:06.646678,2022-04-11 20:16:44.879450

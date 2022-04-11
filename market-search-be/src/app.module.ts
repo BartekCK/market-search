@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { EnvConfigModule } from './env-config/env-config.module';
 import { EnvConfigService } from './env-config/services/env-config.service';
 import { MarketModule } from './market/market.module';
+import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { MarketModule } from './market/market.module';
       },
     }),
     MarketModule,
+    ProductModule,
   ],
   controllers: [],
   providers: [],
