@@ -23,6 +23,9 @@ export class Product {
   @Column({ type: 'int' })
   quantity: number;
 
+  @Column({ type: 'numeric', precision: 6, scale: 2 })
+  price: number;
+
   @Column({ type: 'uuid', name: 'market_id' })
   marketId: string;
 
