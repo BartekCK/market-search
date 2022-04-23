@@ -1,16 +1,15 @@
-import { Controller, Get } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
+import { Controller, Get, Query } from '@nestjs/common';
 import { Product } from '../entities/product.entity';
-import { Repository } from 'typeorm';
+import { ProductService } from '../services/product.service';
 
 @Controller('products')
 export class ProductController {
-  constructor(
-    @InjectRepository(Product) private productRepository: Repository<Product>,
-  ) {}
+  constructor(private readonly productService: ProductService) {}
 
   @Get('/')
-  async getAllProducts(): Promise<Product[]> {
-    return this.productRepository.find();
+  async searchProducts(
+    @Query('search') name: string,
+  ): Promise<{ name: string }[]> {
+    return this.productService.search(name);
   }
 }
