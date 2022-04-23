@@ -152,7 +152,7 @@ a875621e-dbc7-4c91-be01-31ff96a4fdd9,Masło orzechowe,tłuszcze,100,5.38,54c159d
 faadaa2b-b424-4606-8098-4b1de4ced371,Oleje roślinne,tłuszcze,100,7.75,54c159da-3242-442e-a21e-6f892af1786f
 c2ed7600-16d1-4e07-b964-e5c84a79aa3e,Bagietka pełnoziarnista,przetwory zbożowe,100,7.9,54c159da-3242-442e-a21e-6f892af1786f
 148eb60c-ff49-40da-984b-bcacb32cf91a,Bułka bezglutenowa wieloziarnista,przetwory zbożowe,100,6.34,54c159da-3242-442e-a21e-6f892af1786f
-5f065e33-dbd4-46c7-a7e2-e7d2ce36fa50,Bułkarahamka,przetwory zbożowe,100,3.65,54c159da-3242-442e-a21e-6f892af1786f
+5f065e33-dbd4-46c7-a7e2-e7d2ce36fa50,Bułka grahamka,przetwory zbożowe,100,3.65,54c159da-3242-442e-a21e-6f892af1786f
 c47d4fd4-49a8-4837-8c21-b1d6f761c516,Bułka tarta,przetwory zbożowe,100,4.08,54c159da-3242-442e-a21e-6f892af1786f
 b9d831a3-1c84-4da6-a0fd-88ede4af6279,Chleb bezglutenowy wieloziarnisty,przetwory zbożowe,100,4.92,54c159da-3242-442e-a21e-6f892af1786f
 8fee311e-4cc8-4aa7-9b42-a775a2c1e36b,Chleb chrupki,przetwory zbożowe,100,2.69,54c159da-3242-442e-a21e-6f892af1786f
@@ -196,7 +196,7 @@ e060557c-aca1-4886-82fd-fb08c63712a5,Mąka żytnia typ 2000,przetwory zbożowe,1
 6aa41140-32fe-44c4-9d70-d0af3580d936,Otręby owsiane,przetwory zbożowe,100,3.38,54c159da-3242-442e-a21e-6f892af1786f
 d8f3255c-5223-49b7-a8b7-bf71d572e618,Otręby gryczane,przetwory zbożowe,100,7.05,54c159da-3242-442e-a21e-6f892af1786f
 bbb38b06-d4ec-449a-8e0e-7638bb0500fc,Otręby żytnie,przetwory zbożowe,100,3.7,54c159da-3242-442e-a21e-6f892af1786f
-083477f6-51c7-4145-ae82-a23d40205cd3,Platki kukurydziane,przetwory zbożowe,100,4.76,54c159da-3242-442e-a21e-6f892af1786f
+083477f6-51c7-4145-ae82-a23d40205cd3,Płatki kukurydziane,przetwory zbożowe,100,4.76,54c159da-3242-442e-a21e-6f892af1786f
 cc226bb0-8a10-4667-8e95-624ac39d58ef,Płatki owsiane,przetwory zbożowe,100,4.7,54c159da-3242-442e-a21e-6f892af1786f
 49f6df98-b4c8-4a96-982b-ca3bfd9ff52a,Płatki gryczane,przetwory zbożowe,100,3.03,54c159da-3242-442e-a21e-6f892af1786f
 dc84d54e-462b-40bc-bd3e-7ab3f73bde33,Płatki jęczmienne,przetwory zbożowe,100,2.46,54c159da-3242-442e-a21e-6f892af1786f
@@ -474,7 +474,7 @@ d792c641-c331-4b70-aac5-1c9584de99be,Masło orzechowe,tłuszcze,100,6.89,4d1e321
 6bf1a70b-56ed-420e-a0eb-41f876ec6ed7,Oleje roślinne,tłuszcze,100,7.51,4d1e3212-e652-4cac-8b05-e93af589acc2
 cc126ad5-66f8-4134-adff-fa9e59b980f4,Bagietka pełnoziarnista,przetwory zbożowe,100,2.68,4d1e3212-e652-4cac-8b05-e93af589acc2
 818d004f-802f-42dd-9b7b-46a1fc82d0d8,Bułka bezglutenowa wieloziarnista,przetwory zbożowe,100,6.82,4d1e3212-e652-4cac-8b05-e93af589acc2
-f905ac68-c90a-48bf-8283-2a89150df28c,Bułkarahamka,przetwory zbożowe,100,3.74,4d1e3212-e652-4cac-8b05-e93af589acc2
+f905ac68-c90a-48bf-8283-2a89150df28c,Bułka grahamka,przetwory zbożowe,100,3.74,4d1e3212-e652-4cac-8b05-e93af589acc2
 3e3390de-9e2c-46d4-8a40-13e2c3dc5105,Bułka tarta,przetwory zbożowe,100,3.22,4d1e3212-e652-4cac-8b05-e93af589acc2
 51b056ff-dacf-4877-99bf-8291b9e7c0b2,Chleb bezglutenowy wieloziarnisty,przetwory zbożowe,100,6.78,4d1e3212-e652-4cac-8b05-e93af589acc2
 2e4691ab-6dc0-45be-9391-acf1fc85cc8c,Chleb chrupki,przetwory zbożowe,100,6.88,4d1e3212-e652-4cac-8b05-e93af589acc2
@@ -518,7 +518,7 @@ a40ef627-4923-4ec6-992d-72f4da544e81,Mąka żytnia typ 2000,przetwory zbożowe,1
 42a0dc8f-1115-46b6-b0e1-92b9e3a0e4e5,Otręby owsiane,przetwory zbożowe,100,4.49,4d1e3212-e652-4cac-8b05-e93af589acc2
 31e83f95-2095-416e-bf3a-4ecc0c6b5434,Otręby gryczane,przetwory zbożowe,100,4.02,4d1e3212-e652-4cac-8b05-e93af589acc2
 193551eb-353f-43d3-8d01-3df26295a456,Otręby żytnie,przetwory zbożowe,100,4.38,4d1e3212-e652-4cac-8b05-e93af589acc2
-29ce7723-680f-4406-8eab-fe3901e5329d,Platki kukurydziane,przetwory zbożowe,100,1.41,4d1e3212-e652-4cac-8b05-e93af589acc2
+29ce7723-680f-4406-8eab-fe3901e5329d,Płatki kukurydziane,przetwory zbożowe,100,1.41,4d1e3212-e652-4cac-8b05-e93af589acc2
 67495bdf-f36d-40f2-a816-8e3e721bc374,Płatki owsiane,przetwory zbożowe,100,5.33,4d1e3212-e652-4cac-8b05-e93af589acc2
 29f37529-2530-420c-8769-7c0a1d9c5044,Płatki gryczane,przetwory zbożowe,100,3.4,4d1e3212-e652-4cac-8b05-e93af589acc2
 bd1b3a8d-b595-42c7-ad8c-fcf0a627ed5e,Płatki jęczmienne,przetwory zbożowe,100,1.62,4d1e3212-e652-4cac-8b05-e93af589acc2
@@ -796,7 +796,7 @@ d3ab1724-eb35-42a4-842d-bdc56f2e2b10,Masło ekstra,tłuszcze,100,2.73,6066a35a-f
 0180b2f9-be15-4727-960d-a4ccd17be3ff,Oleje roślinne,tłuszcze,100,7.51,6066a35a-fd57-496d-8d1c-9567e4174d66
 c1d4d37f-026f-4193-96d8-417dcf171f90,Bagietka pełnoziarnista,przetwory zbożowe,100,2.68,6066a35a-fd57-496d-8d1c-9567e4174d66
 26a70e75-4c45-4b95-9b09-8525b4fb2750,Bułka bezglutenowa wieloziarnista,przetwory zbożowe,100,6.82,6066a35a-fd57-496d-8d1c-9567e4174d66
-b233f5ad-7432-440f-91ab-5f544b9bdb03,Bułkarahamka,przetwory zbożowe,100,3.74,6066a35a-fd57-496d-8d1c-9567e4174d66
+b233f5ad-7432-440f-91ab-5f544b9bdb03,Bułka grahamka,przetwory zbożowe,100,3.74,6066a35a-fd57-496d-8d1c-9567e4174d66
 3f7d8039-3f1b-48cf-8ea5-37171f00a18c,Bułka tarta,przetwory zbożowe,100,3.22,6066a35a-fd57-496d-8d1c-9567e4174d66
 2e36362e-696f-4489-a8a4-9448baac8c0e,Chleb bezglutenowy wieloziarnisty,przetwory zbożowe,100,6.78,6066a35a-fd57-496d-8d1c-9567e4174d66
 519c39bf-3119-4bb9-96e2-89437cff2b34,Chleb chrupki,przetwory zbożowe,100,6.88,6066a35a-fd57-496d-8d1c-9567e4174d66
@@ -840,7 +840,7 @@ f1ca7d27-34ee-4b79-aebd-887dc6c7ad70,Otręby pszenne,przetwory zbożowe,100,7.62
 4003f88e-04d1-408a-887e-d0ee879657df,Otręby owsiane,przetwory zbożowe,100,4.49,6066a35a-fd57-496d-8d1c-9567e4174d66
 0b448309-2591-4b2c-a904-bfaa524ee131,Otręby gryczane,przetwory zbożowe,100,4.02,6066a35a-fd57-496d-8d1c-9567e4174d66
 4372003e-b335-4e63-bce8-830111c69248,Otręby żytnie,przetwory zbożowe,100,4.38,6066a35a-fd57-496d-8d1c-9567e4174d66
-5c66772f-4cd1-4374-bc6b-42c99ee9da07,Platki kukurydziane,przetwory zbożowe,100,1.41,6066a35a-fd57-496d-8d1c-9567e4174d66
+5c66772f-4cd1-4374-bc6b-42c99ee9da07,Płatki kukurydziane,przetwory zbożowe,100,1.41,6066a35a-fd57-496d-8d1c-9567e4174d66
 3530bfbc-3b42-4e07-998c-68bfd6471595,Płatki owsiane,przetwory zbożowe,100,5.33,6066a35a-fd57-496d-8d1c-9567e4174d66
 ef8009b4-1ce5-48c9-bebc-bb671b6a2e8b,Płatki gryczane,przetwory zbożowe,100,3.4,6066a35a-fd57-496d-8d1c-9567e4174d66
 165f724c-bbb8-4a29-be8b-e1e34b5b7044,Płatki jęczmienne,przetwory zbożowe,100,1.62,6066a35a-fd57-496d-8d1c-9567e4174d66

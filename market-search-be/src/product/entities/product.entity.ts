@@ -2,6 +2,7 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  Index,
   JoinColumn,
   ManyToOne,
   PrimaryGeneratedColumn,
@@ -14,6 +15,7 @@ export class Product {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @Index('product_name_trigram', { synchronize: false })
   @Column({ type: 'varchar', length: 255 })
   name: string;
 
