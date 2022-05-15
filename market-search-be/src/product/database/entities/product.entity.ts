@@ -8,10 +8,10 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { Market } from '../../market/entities/market.entity';
+import { MarketEntity } from '../../../market/database/entities/market.entity';
 
 @Entity({ name: 'product' })
-export class Product {
+export class ProductEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -30,10 +30,6 @@ export class Product {
 
   @Column({ type: 'uuid', name: 'market_id' })
   marketId: string;
-
-  @JoinColumn({ referencedColumnName: 'id', name: 'market_id' })
-  @ManyToOne(() => Market, (market) => market.id, { lazy: true })
-  market: Promise<Market>;
 
   @CreateDateColumn({ name: 'created_at' })
   public createdAt: Date;

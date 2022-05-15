@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ProductRepository } from '../repositories/product.repository';
-import { Product } from '../entities/product.entity';
+import { ProductRepository } from '../database/repositories/product.repository';
 
 @Injectable()
 export class ProductService {
@@ -8,9 +7,5 @@ export class ProductService {
 
   async search(name: string): Promise<{ name: string }[]> {
     return this.productRepository.findSimilar(name);
-  }
-
-  async getAll(): Promise<Product[]> {
-    return this.productRepository.getAll();
   }
 }

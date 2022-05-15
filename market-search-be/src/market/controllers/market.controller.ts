@@ -1,16 +1,26 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Market } from '../entities/market.entity';
+import { MarketEntity } from '../database/entities/market.entity';
 import { Repository } from 'typeorm';
+import { MarketService } from '../services/market.service';
 
 @Controller('markets')
 export class MarketController {
   constructor(
-    @InjectRepository(Market) private addressRepository: Repository<Market>,
+    @InjectRepository(MarketEntity)
+    private marketRepository: Repository<MarketEntity>,
+    private readonly marketService: MarketService,
   ) {}
 
   @Get('/')
-  async getAllMarkets(): Promise<Market[]> {
-    return this.addressRepository.find();
+  async getAllMarkets(): Promise<MarketEntity[]> {
+    return this.marketRepository.find();
+  }
+
+  @Get('/products')
+  async getMarketProduct(
+    @Query('productName') productName: string,
+  ): Promise<any[]> {
+    return this.marketService.getMarketProduct(productName);
   }
 }
