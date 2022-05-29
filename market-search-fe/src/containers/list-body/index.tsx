@@ -1,9 +1,20 @@
 import React from 'react';
 import searchProductMock from '../../mocks/searchProduct.json';
-import { MarketProduct } from '../../types';
+import { MarketProduct } from '../../api/types';
+import List from '../../components/list';
+import { ListBodyStyle } from './styles';
+import { MarketProductContext } from '../../context';
 
 const ListBody: React.FC = () => {
-  const [state, setState] = React.useState<MarketProduct[]>(searchProductMock);
+  const { state } = React.useContext(MarketProductContext);
 
-  return <div>ListBody</div>;
+  return (
+    <ListBodyStyle>
+      {state.markets.map((market) => (
+        <List key={market.id} market={market} />
+      ))}
+    </ListBodyStyle>
+  );
 };
+
+export default ListBody;
