@@ -10,13 +10,13 @@ export const HeaderStyle = styled.div`
 
   > .header-title {
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 3.5rem;
 
     @media (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 3rem;
       padding: 2rem;
     }
   }

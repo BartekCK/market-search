@@ -30,7 +30,7 @@ const SearchBar: React.FC<Props> = ({ width, className }: Props) => {
 
   const renderOptions = React.useMemo(() => {
     return products.map((product) => renderItem(product));
-  }, [products]);
+  }, [products, renderItem]);
 
   const onInput = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const data = await Api.searchProduct(event.target.value);
