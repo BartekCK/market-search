@@ -23,7 +23,7 @@ const mapMarketProductIntoMarket = (marketProduct: MarketProduct, searchedTerms:
 
 export const reducer = (state: State, action: Action): State => {
   switch (action.type) {
-    case 'addSearchedProduct':
+    case 'addSearchedProduct': {
       const { data } = action;
 
       const markets: Market[] = data
@@ -49,8 +49,48 @@ export const reducer = (state: State, action: Action): State => {
           return mapMarketProductIntoMarket(marketProduct, searchedTerms);
         })
         .sort((a, b) => a.name.localeCompare(b.name));
+      return { ...state, markets };
+    }
+
+    case 'chooseProduct': {
+      const { product, marketId, mainProductName } = action;
+
+      const market = state.markets.find((market) => market.id === marketId);
+
+      if (!market) {
+        return state;
+      }
+
+      const updatedSearchedTerms = market.searchedTerms.map((searchedTerm) => {
+        if (searchedTerm.mainProductName !== mainProductName) {
+          return { ...searchedTerm };
+        }
+
+        return {
+          mainProductName,
+          product,
+          similarProducts: [],
+        };
+      });
+
+      const updatedMarket: Market = { ...market, searchedTerms: updatedSearchedTerms };
+
+      return { markets: state.markets.map((market) => (market.id === marketId ? updatedMarket : market)) };
+    }
+
+    case 'deleteProduct': {
+      const { mainProductName } = action;
+
+      const markets: Market[] = state.markets.map((market) => {
+        const searchedTerms = market.searchedTerms.filter(
+          (searchedTerm) => searchedTerm.mainProductName !== mainProductName,
+        );
+
+        return { ...market, searchedTerms };
+      });
 
       return { ...state, markets };
+    }
   }
 
   return state;

@@ -21,7 +21,7 @@ const SearchBar: React.FC<Props> = ({ width, className }: Props) => {
       label: (
         <ItemStyle>
           <span>{name}</span>
-          <span>{lowestPrice} zł</span>
+          <span className="price">od {lowestPrice} zł</span>
         </ItemStyle>
       ),
     }),
@@ -50,7 +50,7 @@ const SearchBar: React.FC<Props> = ({ width, className }: Props) => {
       options={renderOptions}
       onSelect={onSelect}
     >
-      <Input.Search size="large" placeholder="input here" enterButton onInput={onInput} />
+      <Input.Search size="large" placeholder="Wprowadź nazwę produktu" enterButton onInput={onInput} />
     </AutoComplete>
   );
 };
