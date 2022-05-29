@@ -1,4 +1,4 @@
-interface ProductInterface {
+export interface ProductInterface {
   id: string;
   name: string;
   category: string;
@@ -32,5 +32,18 @@ export class Product {
 
   getMarketId(): string {
     return this.marketId;
+  }
+
+  getDetails(): ProductInterface {
+    return {
+      id: this.id,
+      name: this.name,
+      category: this.category,
+      quantity: this.quantity,
+      price: this.price,
+      marketId: this.marketId,
+      createdAt: this.createdAt,
+      updatedAt: this.updatedAt,
+    };
   }
 }

@@ -1,0 +1,71 @@
+[
+  {
+    "product": {
+      "id": "86ead90b-4292-43c0-aaa8-b5296a1dd2ab",
+      "name": "Mąka pszenna",
+      "category": "przetwory zbożowe",
+      "quantity": 100,
+      "price": 7.25,
+      "marketId": "54c159da-3242-442e-a21e-6f892af1786f"
+    },
+    "similarProducts": [],
+    "id": "54c159da-3242-442e-a21e-6f892af1786f",
+    "name": "First company",
+    "lineOne": "ul. Mała 12",
+    "lineTwo": null,
+    "city": "Warszawa",
+    "zipCode": "25-112"
+  },
+  {
+    "product": {
+      "id": "0fcee042-2624-4dfd-9f31-9a9d4fa6ade9",
+      "name": "Mąka pszenna",
+      "category": "przetwory zbożowe",
+      "quantity": 100,
+      "price": 6.96,
+      "marketId": "4d1e3212-e652-4cac-8b05-e93af589acc2"
+    },
+    "similarProducts": [],
+    "id": "4d1e3212-e652-4cac-8b05-e93af589acc2",
+    "name": "Third company",
+    "lineOne": "ul. Kopalniana 4",
+    "lineTwo": null,
+    "city": "Radom",
+    "zipCode": "55-522"
+  },
+  {
+    "product": null,
+    "similarProducts": [
+      {
+        "id": "98dd9d5b-a14b-4286-8133-e1048f986704",
+        "name": "Mąka pszenna typ 1850",
+        "category": "przetwory zbożowe",
+        "quantity": 100,
+        "price": 7.63,
+        "marketId": "6066a35a-fd57-496d-8d1c-9567e4174d66"
+      },
+      {
+        "id": "2639b635-bdfd-4074-9df3-306a6093dbf9",
+        "name": "Mąka jaglana",
+        "category": "przetwory zbożowe",
+        "quantity": 100,
+        "price": 2.27,
+        "marketId": "6066a35a-fd57-496d-8d1c-9567e4174d66"
+      },
+      {
+        "id": "e78f60cb-e3e6-45cc-ac8c-a2e69045c53d",
+        "name": "Mąka owsiana",
+        "category": "przetwory zbożowe",
+        "quantity": 100,
+        "price": 7.77,
+        "marketId": "6066a35a-fd57-496d-8d1c-9567e4174d66"
+      }
+    ],
+    "id": "6066a35a-fd57-496d-8d1c-9567e4174d66",
+    "name": "Second company",
+    "lineOne": "ul. Duża 11",
+    "lineTwo": null,
+    "city": "Kielce",
+    "zipCode": "11-166"
+  }
+]

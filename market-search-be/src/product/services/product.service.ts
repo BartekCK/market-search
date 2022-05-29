@@ -5,7 +5,7 @@ import { ProductRepository } from '../database/repositories/product.repository';
 export class ProductService {
   constructor(private readonly productRepository: ProductRepository) {}
 
-  async search(name: string): Promise<{ name: string }[]> {
+  async search(name: string): Promise<{ name: string; lowestPrice: number }[]> {
     return this.productRepository.findSimilar(name);
   }
 }

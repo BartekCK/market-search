@@ -13,8 +13,8 @@ export const mapMarketProductDbIntoMarketProduct = (
         marketId: marketProductDb.pro_marketId,
         category: marketProductDb.pro_category,
         quantity: marketProductDb.pro_quantity,
-        createdAt: marketProductDb.pro_createdAt,
-        updatedAt: marketProductDb.pro_updatedAt,
+        createdAt: new Date(marketProductDb.pro_createdAt),
+        updatedAt: new Date(marketProductDb.pro_updatedAt),
       })
     : null;
 
@@ -24,8 +24,8 @@ export const mapMarketProductDbIntoMarketProduct = (
     city: marketProductDb.m_city,
     lineOne: marketProductDb.m_lineOne,
     lineTwo: marketProductDb.m_lineTwo,
-    createdAt: marketProductDb.m_createdAt,
-    updatedAt: marketProductDb.m_updatedAt,
+    createdAt: new Date(marketProductDb.m_createdAt),
+    updatedAt: new Date(marketProductDb.m_updatedAt),
     zipCode: marketProductDb.m_zipCode,
     product,
   });

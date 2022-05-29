@@ -10,15 +10,23 @@ export class ProductRepository {
     private readonly productRepository: Repository<ProductEntity>,
   ) {}
 
-  async findSimilar(name: string): Promise<{ name: string }[]> {
+  async findSimilar(
+    name: string,
+  ): Promise<{ name: string; lowestPrice: number }[]> {
     const query = this.productRepository
       .createQueryBuilder('product')
       .select('name')
+      .addSelect('MIN(product.price)', 'lowestPrice')
       .where('product.name %>> :name', { name })
       .orderBy(`product.name <-> '${name}'`, 'ASC')
       .groupBy('product.name');
 
-    return query.getRawMany<{ name: string }>();
+    const result = await query.getRawMany<{
+      name: string;
+      lowestPrice: number;
+    }>();
+
+    return result.map((el) => ({ ...el, lowestPrice: Number(el.lowestPrice) }));
   }
 
   async findSimilarProductsByNameAndMarketsId(

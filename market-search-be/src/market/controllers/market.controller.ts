@@ -3,6 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { MarketEntity } from '../database/entities/market.entity';
 import { Repository } from 'typeorm';
 import { MarketService } from '../services/market.service';
+import { MarketProductDto } from '../dto/marketProduct.dto';
 
 @Controller('markets')
 export class MarketController {
@@ -20,7 +21,11 @@ export class MarketController {
   @Get('/products')
   async getMarketProduct(
     @Query('productName') productName: string,
-  ): Promise<any[]> {
-    return this.marketService.getMarketProduct(productName);
+  ): Promise<MarketProductDto[]> {
+    const marketProduct = await this.marketService.getMarketProduct(
+      productName,
+    );
+
+    return marketProduct.map((el) => MarketProductDto.create(el));
   }
 }

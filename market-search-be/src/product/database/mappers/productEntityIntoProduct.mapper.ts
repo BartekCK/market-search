@@ -8,7 +8,7 @@ export const mapProductEntityIntoProduct = (
     id: productEntity.id,
     name: productEntity.name,
     marketId: productEntity.marketId,
-    price: productEntity.price,
+    price: Number(productEntity.price),
     category: productEntity.category,
     quantity: productEntity.quantity,
     createdAt: productEntity.createdAt,

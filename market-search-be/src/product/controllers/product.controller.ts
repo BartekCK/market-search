@@ -8,7 +8,7 @@ export class ProductController {
   @Get('/')
   async searchProducts(
     @Query('search') name: string,
-  ): Promise<{ name: string }[]> {
+  ): Promise<{ name: string; lowestPrice: number }[]> {
     return this.productService.search(name);
   }
 }

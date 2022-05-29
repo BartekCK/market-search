@@ -15,6 +15,10 @@ interface MarketProductInterface extends Market {
   product: Product | null;
 }
 
+export interface MarketSimilarProductInterface extends MarketProductInterface {
+  similarProducts: Product[];
+}
+
 export class MarketProduct {
   private readonly id: string;
   private readonly name: string;
@@ -49,5 +53,20 @@ export class MarketProduct {
 
   isProductExist(): boolean {
     return !!this.product;
+  }
+
+  getDetails(): MarketSimilarProductInterface {
+    return {
+      id: this.id,
+      name: this.name,
+      lineOne: this.lineOne,
+      lineTwo: this.lineTwo,
+      city: this.city,
+      zipCode: this.zipCode,
+      createdAt: this.createdAt,
+      updatedAt: this.updatedAt,
+      product: this.product,
+      similarProducts: this.similarProducts,
+    };
   }
 }
