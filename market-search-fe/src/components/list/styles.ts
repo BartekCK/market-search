@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const TitleStyle = styled.div`
-  min-height: 9rem;
-
-  > .title {
-  }
+  min-height: 12rem;
 
   > .ant-typography-secondary {
     margin-bottom: 3px;

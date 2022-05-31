@@ -48,7 +48,7 @@ const data = [
 const EmptyBody = () => {
   const { state } = React.useContext(MarketProductContext);
 
-  return !state.markets.length ? (
+  return !state.markets.length || state.markets.every((el) => !el.searchedTerms.length) ? (
     <EmptyBodyStyle>
       <div className="empty-body-container">
         <h1 className="header">Zaufała nam cała Polska! 🇵🇱</h1>

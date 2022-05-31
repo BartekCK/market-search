@@ -8,9 +8,8 @@ const ListBody: React.FC = () => {
 
   return (
     <ListBodyStyle>
-      {state.markets.map((market) => (
-        <List key={market.id} market={market} />
-      ))}
+      {state.markets.every((el) => el.searchedTerms.length) &&
+        state.markets.map((market) => <List key={market.id} market={market} />)}
     </ListBodyStyle>
   );
 };

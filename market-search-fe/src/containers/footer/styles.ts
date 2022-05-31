@@ -8,7 +8,7 @@ export const FooterStyle = styled.div`
   font-size: 1.2rem;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0 1rem;
 
   > .col {
@@ -16,6 +16,9 @@ export const FooterStyle = styled.div`
     flex-direction: column;
     margin: 0 10rem;
     justify-content: center;
+    > span {
+      padding: 1rem;
+    }
   }
 
   @media (max-width: 1000px) {
