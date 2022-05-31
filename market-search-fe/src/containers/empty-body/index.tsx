@@ -56,8 +56,8 @@ const EmptyBody = () => {
         <p className="description">Opinie naszych klientów</p>
       </div>
       <Carousel style={{ padding: '4rem' }} autoplay>
-        {data.map((item) => (
-          <div>
+        {data.map((item, index) => (
+          <div key={index}>
             <Comment
               author={<span>{item.name}</span>}
               avatar={<Avatar src="https://joeschmoe.io/api/v1/random" alt={item.name} />}
