@@ -13,6 +13,7 @@ services:
     volumes:
       - ./.db/data:/var/lib/postgresql/data
       - ./.db/tsearch_data:/usr/share/postgresql/13/tsearch_data
+      - ./.db/csv:/usr/share/postgresql/13/csv
 
   api:
     build:
