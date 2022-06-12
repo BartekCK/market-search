@@ -8,4 +8,5 @@ export async function teardownDB(): Promise<void> {
   }
 
   await instance.dropDatabase();
+  await instance.destroy();
 }
