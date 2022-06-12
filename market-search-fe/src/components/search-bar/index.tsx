@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, AutoComplete } from 'antd';
+import { Input, AutoComplete, notification } from 'antd';
 import Api from '../../api';
 import { ItemStyle } from './styles';
 import { MarketProductContext } from '../../context';
@@ -43,6 +43,21 @@ const SearchBar: React.FC<Props> = ({ width, className }: Props) => {
     dispatch({ type: 'addSearchedProduct', data: marketsProduct, mainProductName: productName });
   };
 
+  const openNotification = () => {
+    notification.warn({
+      message: 'Uwaga',
+      description: 'Wprowadzono nieprawidłową nazwę produktu',
+    });
+  };
+
+  const onChange = (event: any) => {
+    const { value } = event.target;
+
+    if (!products.length && value) {
+      openNotification();
+    }
+  };
+
   return (
     <AutoComplete
       dropdownClassName="certain-category-search-dropdown"
@@ -50,7 +65,14 @@ const SearchBar: React.FC<Props> = ({ width, className }: Props) => {
       options={renderOptions}
       onSelect={onSelect}
     >
-      <Input.Search size="large" placeholder="Wprowadź nazwę produktu" enterButton onInput={onInput} />
+      <Input.Search
+        width={width}
+        size="large"
+        placeholder="Wprowadź nazwę produktu"
+        enterButton
+        onInput={onInput}
+        onPressEnter={onChange}
+      />
     </AutoComplete>
   );
 };
