@@ -244,7 +244,7 @@ c317b5e3-4b26-4460-a028-be1423b9d717,Wątroba wieprzowa,mięso i wędliny,100,6.
 cb6575ab-8090-4d4b-9eba-28ac5b1fc0a2,Pasztet pieczony,mięso i wędliny,100,5.68,54c159da-3242-442e-a21e-6f892af1786f
 a1510a19-baeb-41a1-bb8d-21a45ca3c90c,Kotlet schabowy. panierowany,mięso i wędliny,100,4.59,54c159da-3242-442e-a21e-6f892af1786f
 3066e48b-85bd-455e-9b73-5be09fe13d62,Śledź w śmietanie,ryby i drób,100,4.66,54c159da-3242-442e-a21e-6f892af1786f
-86ead90b-4292-43c0-aaa8-b5296a1dd2ab,Mąka pszenna,przetwory zbożowe,100,7.25,54c159da-3242-442e-a21e-6f892af1786f
+86ead90b-4292-43c0-aaa8-b5296a1dd2ab,Mąka pszenna,przetwory zbożowe,0,7.25,54c159da-3242-442e-a21e-6f892af1786f
 ecf8a041-014a-4454-b076-9a5677a19cb5,Mąka żytnia,przetwory zbożowe,100,6.24,54c159da-3242-442e-a21e-6f892af1786f
 0d458275-61bf-429c-849c-b8965fef1747,Kasza jęczmienna,przetwory zbożowe,100,1.05,54c159da-3242-442e-a21e-6f892af1786f
 eb725ba2-bcfe-46d9-ab4c-79e147304670,Ryż biały,przetwory zbożowe,100,5.81,54c159da-3242-442e-a21e-6f892af1786f
@@ -285,7 +285,7 @@ c7526ac0-3944-4333-8aa1-48756734f44c,Poziomki,owoce,100,2.22,54c159da-3242-442e-
 0f37dc92-859d-4bf7-8bec-a8c788e27ab7,Rodzynki,owoce suszone,100,6.51,54c159da-3242-442e-a21e-6f892af1786f
 1f1c9f7a-f4fa-4cd0-a1e2-d398769895c3,Śliwki suszone z pestką,owoce suszone,100,5.45,54c159da-3242-442e-a21e-6f892af1786f
 14e4b746-382a-4c08-b8d6-5ecd53f50d54,Pestki dyni,orzechy i nasiona,100,6.09,54c159da-3242-442e-a21e-6f892af1786f
-a86b1d3c-3dc3-4bd2-81fe-c6da5e06b0de,Pestki słonecznika,orzechy i nasiona,100,1.95,54c159da-3242-442e-a21e-6f892af1786f
+a86b1d3c-3dc3-4bd2-81fe-c6da5e06b0de,Pestki słonecznika,orzechy i nasiona,0,1.95,54c159da-3242-442e-a21e-6f892af1786f
 f08b3258-63ac-4905-b935-fc0cbef52cde,Miód,słodycze i przekąski,100,2.39,54c159da-3242-442e-a21e-6f892af1786f
 a0faa5fd-0d6d-4b27-82d5-3ea3f3ff4ebe,Żelki,słodycze i przekąski,100,2.45,54c159da-3242-442e-a21e-6f892af1786f
 76845201-ff37-4866-b5a9-ed176bd5b652,Kakao,słodycze i przekąski,100,2.83,54c159da-3242-442e-a21e-6f892af1786f
