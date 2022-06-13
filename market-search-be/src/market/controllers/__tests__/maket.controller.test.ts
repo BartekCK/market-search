@@ -1,12 +1,10 @@
 import { Test } from '@nestjs/testing';
-import { INestApplication } from '@nestjs/common';
 import { MarketController } from '../market.controller';
 import { MarketEntity } from '../../database/entities/market.entity';
 import { MarketService } from '../../services/market.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
 
 describe('MarketController', () => {
-  let app: INestApplication;
   let marketController: MarketController;
 
   const marketService = {
@@ -30,10 +28,6 @@ describe('MarketController', () => {
     }).compile();
 
     marketController = moduleRef.get<MarketController>(MarketController);
-  });
-
-  afterAll(async () => {
-    await app.close();
   });
 
   it('should be defined', () => {
