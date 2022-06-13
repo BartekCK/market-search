@@ -1,0 +1,26 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "coveragePathIgnorePatterns": [
+    "node_modules",
+    "test-config",
+    "interfaces",
+    "jestGlobalMocks.ts",
+    ".module.ts",
+    "./src/database"
+  ],
+  "rootDir": "src",
+  "testRegex": ".*\\.test\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "**/*.(t|j)s",
+    "!./src/database/*"
+  ],
+  "coverageDirectory": "../coverage",
+  "testEnvironment": "node"
+}
