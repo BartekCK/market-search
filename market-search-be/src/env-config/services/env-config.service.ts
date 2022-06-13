@@ -24,6 +24,7 @@ export class EnvConfigService extends ConfigService {
       database: this.get<string>('DB_NAME'),
       entities: ['**/*.entity{ .ts,.js}'],
       migrations: [`${path.join(__dirname, '../../database/migrations/*.ts')}`],
+      autoLoadEntities: true,
     };
   }
 }

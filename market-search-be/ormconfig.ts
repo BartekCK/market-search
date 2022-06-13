@@ -19,7 +19,7 @@ const dataSourceFactory = () => {
     entities: ['**/**.entity{.ts,.js}'],
     migrations: ['./src/database/migrations/*.ts'],
     synchronize: true,
-    logging: true,
+    logging: process.env.NODE_ENV === 'development' ? true : false,
   });
 };
 
