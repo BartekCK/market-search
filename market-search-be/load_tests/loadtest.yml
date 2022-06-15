@@ -1,0 +1,43 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 10
+      arrivalRate: 5
+      name: Warm up
+    - duration: 20
+      arrivalRate: 5
+      rampTo: 50
+      name: Ramp up load
+    - duration: 60
+      arrivalRate: 50
+      name: Sustained load
+  payload:
+    path: "../.db/csv/market_search_public_product.csv"
+    fields:
+      - "id"
+      - "name"
+      - "category"
+      - "quantity"
+      - "price"
+      - "market_id"
+
+scenarios:
+  - name: "Search product by name"
+    flow:
+      - get:
+          url: "/products?search=mąka"
+
+  - name: "Get exist market product"
+    flow:
+      - get:
+          url: "/markets/products?productName=Coca - cola"
+
+  - name: "Search similar market product"
+    flow:
+      - get:
+          url: "/markets/products?productName=Mąka pszenna"
+
+  - name: "Get all market list"
+    flow:
+      - get:
+          url: "/markets"
